@@ -78,7 +78,7 @@ public class Generator : MonoBehaviour
             // Shuffle tuple data by current column line index
             SwitchTuple(i);
         }
-        int count = 0;
+
         // Create block object and set number as text
         for (int i = 0; i < GRID_MAX; i++) // Y
         {
@@ -101,7 +101,6 @@ public class Generator : MonoBehaviour
                 else if ((j + 1) % 3 == 0)
                     blocks[j, i].text = grid[i, j / 3].Item3.ToString();
                 else Debug.Log("ERROR");
-                count++;
             }
         }
     }
